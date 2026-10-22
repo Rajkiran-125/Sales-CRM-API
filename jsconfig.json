@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "module": "commonjs",
+    "target": "es2024",
+    "moduleResolution": "node",
+    "strict": true,
+    "noEmit": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*.js"]
+}

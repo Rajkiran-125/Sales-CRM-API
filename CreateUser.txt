@@ -1,0 +1,11 @@
+Create the admin. In a terminal, in D:\Rajkiran\APPLICATIONS\sales-crm\sales-crm-api:
+
+
+npm run bootstrap:admin -- --email rajkiran@cnergee.com --name "Rajkiran"
+Use whatever email and name you want; keep the -- before --email. It prints something like:
+
+
+CRM Admin created: Rajkiran <rajkiran@cnergee.com> (user id 1).
+Valid until 2026-10-12T… (UTC). Open this link once to set the password:
+
+  http://localhost:4200/accept-invitation?token=…

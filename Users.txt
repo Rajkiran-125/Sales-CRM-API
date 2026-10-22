@@ -1,0 +1,37 @@
+D:\Rajkiran\APPLICATIONS\sales-crm\sales-crm-api>npm run seed:demo
+
+> sales-crm-api@0.1.0 seed:demo
+> node src/cli/seed-demo.js
+
+Loading demo data into unigr8ways_sales_crm on 103.54.183.132:4036 ...
+
+Done: 20 new users, 12 new master entries (existing ones were skipped).
+
+Every demo user signs in with the password: Demo-Team-2026!
+
+  arvind.kulkarni@cnergee.test       MANAGEMENT               Active
+  vikram.mehta@cnergee.test          SALES_HEAD               Active
+  neha.joshi@cnergee.test            SALES_EXEC               Active
+  karthik.raman@cnergee.test         SALES_EXEC               Active
+  amandeep.singh@cnergee.test        SALES_EXEC               Active
+  rohan.deshpande@cnergee.test       SALES_EXEC               Active
+  sneha.patil@cnergee.test           SALES_EXEC               Active
+  imran.shaikh@cnergee.test          SALES_EXEC               Inactive
+  divya.narayanan@cnergee.test       SALES_EXEC               Active
+  arjun.rao@cnergee.test             SALES_EXEC               Active
+  lakshmi.iyer@cnergee.test          SALES_EXEC               Active
+  pooja.sharma@cnergee.test          SALES_EXEC               Active
+  rahul.verma@cnergee.test           SALES_EXEC               Locked
+  simran.kaur@cnergee.test           SALES_EXEC               Invited
+  sanjay.gupta@cnergee.test          PRESALES                 Active
+  ananya.bose@cnergee.test           PRESALES                 Active
+  farhan.qureshi@cnergee.test        PARTNER_MGR + SALES_EXEC Active
+  meera.nair@cnergee.test            FINANCE                  Active
+  suresh.pillai@cnergee.test         FINANCE                  Active
+  kavita.rao@cnergee.test            CRM_ADMIN                Active
+
+Simran Kaur's invitation is still open: the email is in the mail folder (D:\Rajkiran\APPLICATIONS\sales-crm\sales-crm-api\var\mail).
+Rahul Verma is locked after too many wrong passwords: unlock from the user page.
+
+
+<<<<<  password for all demo users - Demo-Team-2026! >>>>>>>>>>>>

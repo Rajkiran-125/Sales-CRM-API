@@ -1,0 +1,70 @@
+{
+  "name": "sales-crm-api",
+  "version": "0.1.0",
+  "description": "Cnergee Sales CRM - Node.js REST API (standalone; business rules in MySQL stored procedures)",
+  "private": true,
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=24.21.0",
+    "npm": ">=11.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
+    "test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --selectProjects unit",
+    "test:db": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --selectProjects api",
+    "bootstrap:admin": "node src/cli/bootstrap-admin.js",
+    "seed:demo": "node src/cli/seed-demo.js",
+    "job": "node src/cli/run-job.js",
+    "generate:jwt-secret": "node src/cli/generate-jwt-secret.js",
+    "typecheck": "tsc -p jsconfig.json",
+    "check": "npm run lint && npm run format:check && npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "cookie-parser": "1.4.7",
+    "cors": "2.8.6",
+    "dotenv": "18.0.6",
+    "exceljs": "4.4.0",
+    "express": "5.2.1",
+    "express-rate-limit": "8.7.1",
+    "helmet": "8.3.0",
+    "jsonwebtoken": "9.0.3",
+    "multer": "2.4.0",
+    "mysql2": "3.24.5",
+    "nodemailer": "10.0.16",
+    "pdfkit": "0.20.2",
+    "sanitize-html": "2.17.7",
+    "swagger-ui-express": "5.0.1",
+    "winston": "3.19.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/cookie-parser": "1.4.10",
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.6",
+    "@types/jsonwebtoken": "9.0.10",
+    "@types/multer": "2.3.0",
+    "@types/node": "24.19.1",
+    "@types/nodemailer": "8.0.2",
+    "@types/pdfkit": "0.17.6",
+    "@types/sanitize-html": "2.16.2",
+    "@types/swagger-ui-express": "4.1.8",
+    "eslint": "10.12.0",
+    "globals": "17.13.0",
+    "jest": "30.5.2",
+    "nodemon": "3.1.14",
+    "prettier": "3.9.9",
+    "supertest": "7.3.1",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "11.1.1"
+    }
+  }
+}
